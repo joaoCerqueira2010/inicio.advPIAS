@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contratos - Sistema Jurídico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>ADVOCACIA CERQUEIRA & ALCANTARA</h2>
+            <span>Advocacia</span>
+        </div>
+
+        <nav>
+            <a href="index.html">MENU</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="processos.html">Processos</a>
+            <a href="contratos.html">Contratos</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="tarefas.html">Tarefas</a>
+            <a href="doc.html">Documentos</a>
+            <a href="financeiro.html">Financeiro</a>
+            <a href="relatorios.html">Relatórios</a>
+            <a href="configuracoes.html">Configurações</a>
+        </nav>
+
+        <div class="profile">
+            <input type="text" value="Dr. Rodrigo Santos">
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="header">
+            <h1>Gestão de Contratos</h1>
+            <p>Visualize, acompanhe e administre os contratos firmados com clientes.</p>
+
+            <button>Novo Contrato</button>
+        </header>
+
+        <!-- CARDS -->
+        <section class="cards">
+
+            <div class="card">
+                <h3>Contratos Ativos</h3>
+                <input type="number" value="32">
+            </div>
+
+            <div class="card">
+                <h3>Em Análise</h3>
+                <input type="number" value="4">
+            </div>
+
+            <div class="card">
+                <h3>Finalizados</h3>
+                <input type="number" value="18">
+            </div>
+
+            <div class="card">
+                <h3>Vencendo</h3>
+                <input type="number" value="3">
+            </div>
+
+        </section>
+
+        <!-- PRIMEIRA LINHA -->
+        <section class="grid">
+
+            <!-- LISTA -->
+            <div class="box">
+                <h2>Lista de Contratos</h2>
+
+                <input type="text" placeholder="Pesquisar contrato">
+
+                <div class="item">
+                    <input type="text" value="Contrato de Honorários - João da Silva">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Contrato de Defesa Criminal - Maria Oliveira">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Consultoria Jurídica - Empresa Alpha">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Assessoria Empresarial - Empresa Beta">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Acompanhamento Trabalhista - Carlos Pereira">
+                </div>
+
+            </div>
+
+            <!-- VISUALIZAÇÃO -->
+            <div class="box">
+                <h2>Visualização do Contrato</h2>
+
+                <div class="item">
+                    <textarea rows="18" style="width:100%; resize:none;">
+CONTRATO DE PRESTAÇÃO DE SERVIÇOS ADVOCATÍCIOS
+
+CONTRATANTE:
+João da Silva
+
+CONTRATADO:
+Advocacia Cerqueira & Alcantara
+
+OBJETO:
+Prestação de serviços jurídicos referentes ao Processo nº 0001234-56.2026.
+
+HONORÁRIOS:
+R$ 5.000,00
+
+PRAZO:
+12 meses
+
+OBSERVAÇÕES:
+O presente contrato segue as normas da OAB e do Código Civil Brasileiro.
+                    </textarea>
+                </div>
+
+            </div>
+
+            <!-- DADOS -->
+            <div class="box">
+                <h2>Dados do Contrato</h2>
+
+                <div class="item">
+                    <input type="text" value="Número: CTR-2026-001">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Cliente: João da Silva">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Valor: R$ 5.000,00">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Status: Ativo">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Data de Assinatura: 15/06/2026">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Validade: 15/06/2027">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SEGUNDA LINHA -->
+        <section class="grid">
+
+            <!-- ANEXOS -->
+            <div class="box">
+                <h2>Anexos</h2>
+
+                <div class="item">
+                    <input type="text" value="Contrato Assinado.pdf">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Procuração.pdf">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Documentos do Cliente.pdf">
+                </div>
+
+                <div class="item">
+                    <input type="file">
+                </div>
+
+            </div>
+
+            <!-- HISTÓRICO -->
+            <div class="box">
+                <h2>Histórico do Contrato</h2>
+
+                <div class="item">
+                    <input type="text" value="15/06/2026 - Contrato criado">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="15/06/2026 - Assinado pelo cliente">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="16/06/2026 - Documentos anexados">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="20/06/2026 - Processo iniciado">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
