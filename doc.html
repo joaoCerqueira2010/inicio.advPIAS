@@ -3,24 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Documentos</title>
-<link rel="stylesheet" href="css/style.css">
+<title>Documentos dos Clientes</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<input type="checkbox" id="menu">
-<label for="menu" class="menu-btn">Menu</label>
-
 <div class="container">
 
+    <!-- SIDEBAR -->
     <aside class="sidebar">
 
         <div class="logo">
-            <h2>SANTOS & ASSOCIADOS</h2>
-            <span>ADVOCACIA</span>
+            <h2>CERQUEIRA & ALCÂNTARA</h2>
+            <span>Gestão Documental</span>
         </div>
 
-         <nav>
+       <nav>
          <a href="index.html">MENU</a>
       <a href="agenda.html">Agenda</a>
       <a href="processos.html">Processos</a>
@@ -30,106 +28,227 @@
       <a href="doc.html">Documentos</a>
       <a href="financeiro.html">Financeiro</a>
       <a  href="relatorios.html">Relatórios</a>
-      <a  href="relatorios.html">Configurações</a>
+      <a  href="configuracoes.html">Configurações</a>
       
 
   
     </nav>
-
-
-        <div class="perfil">
-            <strong>Dr. Rodrigo Santos</strong>
-            <small>OAB/PR 123.456</small>
-        </div>
-
     </aside>
 
-    <main class="content">
+    <!-- MAIN -->
+    <main class="main">
 
-        <header class="topbar">
-            <h3>Boa tarde, Dr. Rodrigo</h3>
+        <header class="header">
+            <h1>Documentos dos Clientes</h1>
+            <p>Gerencie arquivos, contratos e documentos processuais.</p>
+
+            <button>Novo Documento</button>
         </header>
 
-        <section class="page-header">
-            <h1>Documentos</h1>
-            <button>Novo Documento</button>
+        <!-- INDICADORES -->
+        <section class="cards">
+
+            <div class="card">
+                <h3>1.248</h3>
+                <p>Documentos</p>
+            </div>
+
+            <div class="card">
+                <h3>47</h3>
+                <p>Pendentes</p>
+            </div>
+
+            <div class="card">
+                <h3>218</h3>
+                <p>Contratos</p>
+            </div>
+
+            <div class="card">
+                <h3>983</h3>
+                <p>Validados</p>
+            </div>
+
         </section>
 
-        <div class="cards">
+        <!-- GRID -->
+        <section class="grid">
 
-            <div class="card">
-                <span>Total de Documentos</span>
-                <h2>156</h2>
+            <!-- UPLOAD -->
+            <div class="box">
+
+                <h2>Enviar Documento</h2>
+
+                <input type="text" placeholder="Nome do Cliente">
+
+                <select>
+                    <option>Selecione a Categoria</option>
+                    <option>RG</option>
+                    <option>CPF</option>
+                    <option>Comprovante de Residência</option>
+                    <option>Contrato</option>
+                    <option>Procuração</option>
+                    <option>Petição</option>
+                </select>
+
+                <input type="file">
+
+                <button class="btn-form">
+                    Enviar Arquivo
+                </button>
+
             </div>
 
-            <div class="card">
-                <span>Este mês</span>
-                <h2>23</h2>
+            <!-- BUSCA -->
+            <div class="box">
+
+                <h2>Pesquisar</h2>
+
+                <input type="text"
+                placeholder="Nome do cliente ou documento">
+
+                <div class="item">
+                    João da Silva
+                </div>
+
+                <div class="item">
+                    Maria Fernandes
+                </div>
+
+                <div class="item">
+                    Empresa Alfa Ltda
+                </div>
+
             </div>
 
-            <div class="card">
-                <span>Armazenamento</span>
-                <h2>2.4 GB</h2>
+            <!-- CATEGORIAS -->
+            <div class="box">
+
+                <h2>Categorias</h2>
+
+                <div class="item">Documentos Pessoais</div>
+                <div class="item">Contratos</div>
+                <div class="item">Procurações</div>
+                <div class="item">Processuais</div>
+                <div class="item">Financeiros</div>
+
             </div>
 
-            <div class="card">
-                <span>Compartilhados</span>
-                <h2>18</h2>
-            </div>
+        </section>
 
-        </div>
+        <!-- TABELA -->
+        <section class="box tabela-documentos">
 
-        <div class="filtros">
-            <input type="text" placeholder="Buscar documento">
-            <select>
-                <option>Tipo: Todos</option>
-            </select>
+            <h2>Arquivos Recentes</h2>
 
-            <select>
-                <option>Processo: Todos</option>
-            </select>
-        </div>
-
-        <div class="table-wrapper">
             <table>
+
                 <thead>
-                <tr>
-                    <th>Documento</th>
-                    <th>Processo</th>
-                    <th>Cliente</th>
-                    <th>Tipo</th>
-                    <th>Data</th>
-                </tr>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Documento</th>
+                        <th>Categoria</th>
+                        <th>Data</th>
+                        <th>Status</th>
+                    </tr>
                 </thead>
 
                 <tbody>
-                <tr>
-                    <td>Petição Inicial.pdf</td>
-                    <td>0001234-56.2023.5.09.0001</td>
-                    <td>João da Silva</td>
-                    <td>Petição</td>
-                    <td>15/05/2024</td>
-                </tr>
 
-                <tr>
-                    <td>Procuração.pdf</td>
-                    <td>0001234-56.2023.5.09.0001</td>
-                    <td>João da Silva</td>
-                    <td>Procuração</td>
-                    <td>15/05/2024</td>
-                </tr>
+                    <tr>
+                        <td>João da Silva</td>
+                        <td>RG.pdf</td>
+                        <td>Pessoal</td>
+                        <td>25/06/2026</td>
+                        <td>
+                            <span class="status ativo">
+                                Validado
+                            </span>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>Contrato Social.docx</td>
-                    <td>-</td>
-                    <td>Empresa Exemplo Ltda.</td>
-                    <td>Contrato</td>
-                    <td>14/05/2024</td>
-                </tr>
+                    <tr>
+                        <td>Maria Fernandes</td>
+                        <td>Contrato.pdf</td>
+                        <td>Contrato</td>
+                        <td>24/06/2026</td>
+                        <td>
+                            <span class="status pendente">
+                                Pendente
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Empresa Alfa Ltda</td>
+                        <td>Procuração.pdf</td>
+                        <td>Jurídico</td>
+                        <td>23/06/2026</td>
+                        <td>
+                            <span class="status ativo">
+                                Validado
+                            </span>
+                        </td>
+                    </tr>
+
                 </tbody>
 
             </table>
-        </div>
+
+        </section>
+
+        <!-- ÚLTIMAS ATIVIDADES -->
+        <section class="grid">
+
+            <div class="box">
+
+                <h2>Últimos Envios</h2>
+
+                <div class="item">
+                    Contrato enviado por Maria Fernandes
+                </div>
+
+                <div class="item">
+                    RG enviado por João da Silva
+                </div>
+
+                <div class="item">
+                    Procuração enviada por Empresa Alfa
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <h2>Documentos Pendentes</h2>
+
+                <div class="item">
+                    Comprovante de residência
+                </div>
+
+                <div class="item">
+                    CPF atualizado
+                </div>
+
+                <div class="item">
+                    Contrato assinado
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <h2>Armazenamento</h2>
+
+                <p><strong>Utilizado:</strong> 3.4 GB</p>
+                <p><strong>Disponível:</strong> 16.6 GB</p>
+
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
