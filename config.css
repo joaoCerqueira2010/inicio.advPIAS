@@ -72,7 +72,11 @@
    PERFIL DO USUÁRIO
 ========================= */
 
-.config-profile{
+.fotouser{   
+   height: 50;
+   width: 50;
+}
+.config-profile  {
     text-align:center;
 }
 
