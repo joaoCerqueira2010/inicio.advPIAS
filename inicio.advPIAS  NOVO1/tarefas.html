@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tarefas</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>ADVOCACIA CERQUEIRA</h2>
+
+<nav>
+       <a href="index.html">MENU</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="processos.html">Processos</a>
+      <a href="contratos.html">Contratos</a>
+      <a href="clientes.html">Clientes</a>
+      <a href="tarefas.html">Tarefas</a>
+      <a href="doc.html">Documentos</a>
+      <a href="financeiro.html">Financeiro</a>
+      <a  href="relatorios.html">Relatórios</a>
+      <a  href="configuracoes.html">Configurações</a>
+      
+
+  
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <header class="page-header">
+      <h1>Tarefas</h1>
+      <button>Nova tarefa</button>
+    </header>
+
+    <div class="filters">
+      <input type="text" placeholder="Buscar tarefa...">
+
+      <select>
+        <option>Prioridade: Todas</option>
+        <option>Alta</option>
+        <option>Média</option>
+        <option>Baixa</option>
+      </select>
+
+      <select>
+        <option>Status: Todos</option>
+        <option>Pendente</option>
+        <option>Em andamento</option>
+        <option>Concluída</option>
+      </select>
+    </div>
+
+    <section class="table">
+
+      <div class="row head">
+        <span>Tarefa</span>
+        <span>Cliente</span>
+        <span>Prazo</span>
+        <span>Prioridade</span>
+        <span>Status</span>
+      </div>
+
+      <div class="row">
+        <span>Revisar petição inicial</span>
+        <span>João da Silva</span>
+        <span>20/05/2024</span>
+        <span class="red">Alta</span>
+        <span class="tag">Pendente</span>
+      </div>
+
+      <div class="row">
+        <span>Audiência trabalhista</span>
+        <span>Maria Oliveira</span>
+        <span>22/05/2024</span>
+        <span class="red">Alta</span>
+        <span class="tag blue">Em andamento</span>
+      </div>
+
+      <div class="row">
+        <span>Elaborar contrato</span>
+        <span>Empresa Exemplo</span>
+        <span>25/05/2024</span>
+        <span class="yellow">Média</span>
+        <span class="tag">Pendente</span>
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>

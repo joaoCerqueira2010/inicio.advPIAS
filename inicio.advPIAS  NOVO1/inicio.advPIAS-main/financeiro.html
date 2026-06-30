@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Configurações</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>CERQUEIRA & ALCÂNTARA</h2>
+            <span>Painel Jurídico</span>
+        </div>
+<nav>
+         <a href="index.html">MENU</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="processos.html">Processos</a>
+      <a href="contratos.html">Contratos</a>
+      <a href="clientes.html">Clientes</a>
+      <a href="tarefas.html">Tarefas</a>
+      <a href="doc.html">Documentos</a>
+      <a href="financeiro.html">Financeiro</a>
+      <a  href="relatorios.html">Relatórios</a>
+      <a  href="configuracoes.html">Configurações</a>
+      
+
+  
+    </nav>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="main">
+
+        <header class="header">
+            <h1>Configurações do Usuário</h1>
+            <p>Gerencie suas informações pessoais e preferências.</p>
+        </header>
+
+        <!-- CARDS -->
+        <section class="cards">
+
+            <div class="card">
+                <h3>Perfil</h3>
+                <p>Dados pessoais</p>
+            </div>
+
+            <div class="card">
+                <h3>Segurança</h3>
+                <p>Senha e acesso</p>
+            </div>
+
+            <div class="card">
+                <h3>Notificações</h3>
+                <p>Alertas do sistema</p>
+            </div>
+
+            <div class="card">
+                <h3>Conta</h3>
+                <p>Configurações gerais</p>
+            </div>
+
+        </section>
+
+        <!-- GRID -->
+        <section class="grid">
+
+            <!-- PERFIL -->
+            <div class="box">
+                <h2>Informações Pessoais</h2>
+
+                <input type="text" placeholder="Nome Completo">
+
+                <input type="email" placeholder="E-mail">
+
+                <input type="tel" placeholder="Telefone">
+
+                <input type="text" placeholder="OAB">
+
+                <button class="btn-form">
+                    Salvar Alterações
+                </button>
+            </div>
+
+            <!-- FOTO -->
+            <div class="box">
+                <h2>Foto de Perfil</h2>
+
+                <div class="avatar">
+                    <img
+                    src="https://via.placeholder.com/150"
+                    alt="Perfil">
+                </div>
+
+                <input type="file">
+
+                <button class="btn-form">
+                    Atualizar Foto
+                </button>
+            </div>
+
+            <!-- SENHA -->
+            <div class="box">
+                <h2>Alterar Senha</h2>
+
+                <input type="password"
+                placeholder="Senha Atual">
+
+                <input type="password"
+                placeholder="Nova Senha">
+
+                <input type="password"
+                placeholder="Confirmar Nova Senha">
+
+                <button class="btn-form">
+                    Alterar Senha
+                </button>
+            </div>
+
+        </section>
+
+        <!-- PREFERÊNCIAS -->
+        <section class="grid">
+
+            <div class="box">
+
+                <h2>Preferências</h2>
+
+                <div class="config-item">
+                    <label>
+                        <input type="checkbox" checked>
+                        Receber notificações por e-mail
+                    </label>
+                </div>
+
+                <div class="config-item">
+                    <label>
+                        <input type="checkbox" checked>
+                        Alertas de audiências
+                    </label>
+                </div>
+
+                <div class="config-item">
+                    <label>
+                        <input type="checkbox">
+                        Modo escuro
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <h2>Idioma</h2>
+
+                <select>
+                    <option>Português</option>
+                    <option>English</option>
+                    <option>Español</option>
+                </select>
+
+                <button class="btn-form">
+                    Salvar Preferências
+                </button>
+
+            </div>
+
+            <div class="box">
+
+                <h2>Conta</h2>
+
+                <p>
+                    Último acesso:
+                    <strong>25/06/2026 08:30</strong>
+                </p>
+
+                <p>
+                    Perfil:
+                    <strong>Administrador</strong>
+                </p>
+
+                <button class="btn-danger">
+                    Encerrar Sessão
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
