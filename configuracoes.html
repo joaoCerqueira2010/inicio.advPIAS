@@ -1,171 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Configurações</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações - Sistema Jurídico</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="container">
 
-  <!-- ================= SIDEBAR ================= -->
-  <aside class="sidebar">
-
-    <div class="logo">
-      <h2>ADVOCACIA CERQUEIRA</h2>
-      <span>Configurações</span>
-    </div>
-
-  <nav>
-      <a href="index.html">Menu</a>
-      <a href="agenda.html">Agenda</a>
-      <a href="processos.html">Processos</a>
-      <a href="contratos.html">Contratos</a>
-      <a href="clientes.html">Clientes</a>
-      <a href="tarefas.html">Tarefas</a>
-      <a href="documentos.html">Documentos</a>
-      <a href="financeiro.html">Financeiro</a>
-      <a href="relatorios.html">Relatórios</a>
-      <a href="configuracoes.html">Configurações</a>
-    </nav>
-
-  </aside>
-
-  <!-- ================= MAIN ================= -->
-  <main class="main">
-
-    <!-- HEADER -->
-    <header class="header">
-
-      <h1>Configurações do Usuário</h1>
-      <p>Gerencie seu perfil, segurança e preferências do sistema.</p>
-
-    </header>
-
-    <!-- ================= GRID CONFIG ================= -->
-    <section class="config-grid">
-
-      <!-- PERFIL -->
-      <div class="config-box config-profile">
-
-        <img src="img/circulos-de-utilizadores-definidos_78370-4704 (1).avif" id="fotouser" alt="Perfil">
-
-        <h3>Dr. Rodrigo Santos</h3>
-        <span>Advogado - OAB 123456</span>
-
-        <button>Alterar Foto</button>
-
-      </div>
-
-      <!-- DADOS -->
-      <div class="config-box">
-
-        <h2>Dados Pessoais</h2>
-
-        <input type="text" placeholder="Nome completo">
-        <input type="email" placeholder="E-mail">
-        <input type="text" placeholder="Telefone">
-        <input type="text" placeholder="OAB">
-
-        <button>Salvar Dados</button>
-
-      </div>
-
-      <!-- SENHA -->
-      <div class="config-box">
-
-        <h2>Segurança</h2>
-
-        <input type="password" placeholder="Senha atual">
-        <input type="password" placeholder="Nova senha">
-        <input type="password" placeholder="Confirmar senha">
-
-        <button>Alterar Senha</button>
-
-        <div class="config-alert">
-          Última alteração de senha: 15 dias atrás
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>ADVOCACIA CERQUEIRA & ALCANTARA</h2>
+            <span>Advocacia</span>
         </div>
 
-      </div>
+        <nav>
+            <a href="index.html">MENU</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="processos.html">Processos</a>
+            <a href="contratos.html">Contratos</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="tarefas.html">Tarefas</a>
+            <a href="documentos.html">Documentos</a>
+            <a href="financeiro.html">Financeiro</a>
+            <a href="relatorios.html">Relatórios</a>
+            <a href="configuracoes.html">Configurações</a>
+        </nav>
 
-    </section>
-
-    <!-- ================= SEGUNDA LINHA ================= -->
-    <section class="config-grid">
-
-      <!-- NOTIFICAÇÕES -->
-      <div class="config-box">
-
-        <h2>Notificações</h2>
-
-        <div class="toggle-item">
-          <span>Notificações por e-mail</span>
-
-          <label class="switch">
-            <input type="checkbox" checked>
-            <span class="slider"></span>
-          </label>
+        <div class="profile">
+            <input type="text" value="Dr. Rodrigo Santos">
         </div>
+    </aside>
 
-        <div class="toggle-item">
-          <span>Alertas de audiências</span>
+    <!-- MAIN -->
+    <main class="main">
 
-          <label class="switch">
-            <input type="checkbox" checked>
-            <span class="slider"></span>
-          </label>
-        </div>
+        <!-- HEADER -->
+        <header class="header">
+            <h1>Configurações do Sistema</h1>
+            <p>Gerencie usuários, dados do escritório, segurança e preferências do sistema.</p>
 
-        <div class="toggle-item">
-          <span>Alertas de prazos</span>
+            <button>Salvar Alterações</button>
+        </header>
 
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider"></span>
-          </label>
-        </div>
+        <!-- CARDS -->
+        <section class="cards">
 
-      </div>
+            <div class="card">
+                <h3>Usuários</h3>
+                <input type="number" value="4">
+            </div>
 
-      <!-- PREFERÊNCIAS -->
-      <div class="config-box">
+            <div class="card">
+                <h3>Perfis Ativos</h3>
+                <input type="number" value="4">
+            </div>
 
-        <h2>Preferências</h2>
+            <div class="card">
+                <h3>Backups</h3>
+                <input type="number" value="12">
+            </div>
 
-        <select>
-          <option>Português (BR)</option>
-          <option>Inglês</option>
-          <option>Espanhol</option>
-        </select>
+            <div class="card">
+                <h3>Permissões</h3>
+                <input type="number" value="8">
+            </div>
 
-        <select>
-          <option>Tema Claro</option>
-          <option>Tema Escuro</option>
-        </select>
+        </section>
 
-        <button>Salvar Preferências</button>
+        <!-- GRID -->
+        <section class="grid">
 
-      </div>
+            <!-- DADOS DO ESCRITÓRIO -->
+            <div class="box">
+                <h2>Dados do Escritório</h2>
 
-      <!-- CONTA -->
-      <div class="config-box">
+                <div class="item">
+                    <input type="text" value="Advocacia Cerqueira & Alcantara">
+                </div>
 
-        <h2>Conta</h2>
+                <div class="item">
+                    <input type="text" value="CNPJ: 00.000.000/0001-00">
+                </div>
 
-        <p><strong>Último acesso:</strong> Hoje às 08:40</p>
-        <p><strong>Status:</strong> Ativo</p>
-        <p><strong>Nível:</strong> Administrador</p>
+                <div class="item">
+                    <input type="text" value="(45) 99999-9999">
+                </div>
 
-        <button class="btn-danger">Encerrar Sessão</button>
+                <div class="item">
+                    <input type="email" value="contato@advocacia.com.br">
+                </div>
 
-      </div>
+                <div class="item">
+                    <input type="text" value="Foz do Iguaçu - PR">
+                </div>
+            </div>
 
-    </section>
+            <!-- USUÁRIO -->
+            <div class="box">
+                <h2>Perfil do Usuário</h2>
 
-  </main>
+                <div class="item">
+                    <input type="text" value="Dr. Rodrigo Santos">
+                </div>
+
+                <div class="item">
+                    <input type="email" value="rodrigo@advocacia.com.br">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Administrador">
+                </div>
+
+                <div class="item">
+                    <input type="password" value="123456">
+                </div>
+
+                <div class="item">
+                    <input type="password" placeholder="Nova senha">
+                </div>
+            </div>
+
+            <!-- SISTEMA -->
+            <div class="box">
+                <h2>Configurações Gerais</h2>
+
+                <div class="item">
+                    <input type="text" value="Idioma: Português (Brasil)">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Moeda: Real (R$)">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Fuso Horário: Brasília">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Tema: Escuro">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Backup Automático: Ativado">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SEGUNDA LINHA -->
+        <section class="grid">
+
+            <!-- SEGURANÇA -->
+            <div class="box">
+                <h2>Segurança</h2>
+
+                <div class="item">
+                    <input type="text" value="Autenticação em 2 Fatores: Ativa">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Último Login: 23/06/2026">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Sessões Ativas: 1">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Logs de Auditoria: Ativos">
+                </div>
+            </div>
+
+            <!-- BACKUP -->
+            <div class="box">
+                <h2>Backup e Banco de Dados</h2>
+
+                <div class="item">
+                    <input type="text" value="SQLite - Conectado">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Último Backup: 23/06/2026 08:00">
+                </div>
+
+                <div class="item">
+                    <input type="text" value="Tamanho do Banco: 128 MB">
+                </div>
+
+                <div class="item">
+                    <input type="file">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- OBSERVAÇÕES -->
+        <section class="grid">
+
+            <div class="box">
+                <h2>Observações do Sistema</h2>
+
+                <div class="item">
+                    <textarea rows="10" style="width:100%; resize:none;">
+Configurações gerais do sistema.
+
+• Verifique regularmente os backups.
+• Atualize as senhas dos usuários periodicamente.
+• Revise permissões de acesso.
+• Monitore logs de auditoria.
+
+Sistema Jurídico versão 1.0.
+                    </textarea>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
 </div>
 
